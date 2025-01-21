@@ -1,26 +1,28 @@
-
 import '../style/hero.css';
-import reactLogo from "../assets/paw.jpg";
+import profilePicture from "../assets/ivan.jpg"; 
 
 function App() {
   return (
-    <div className="main-container">
-      <div className='container'>
-        <nav>
-            <div className='nav'>Home</div>
-            <div className='nav'>Works</div>
-            <div className='nav'>Contact</div>
+    <div className="portfolio-page">
+      <header className="header">
+        <div className="logo">Ivan Macasa</div>
+        <nav className="nav">
+          <a href="#about">About me</a>
+          <button className="cta-button">Say hi!</button>
         </nav>
+      </header>
 
-        <div className='content'>
-            <img src={reactLogo} alt="" />
-             <div className='text'>
-                <h2>Welcome to my portfolio!</h2>
-                <p>I am a web developer and artist, blending creativity with technology to <br /> create engaging digital experiences. Explore my work and discover <br />the intersection of art and code.</p>
-            </div>
-
+      <main className="hero-section">
+        <div className="hero-content">
+          <h1>Hello! I'm Ivan!</h1>
+          <p>
+             I am a student that loves to discover and explore new things
+          </p>
         </div>
-      </div>
+        <div className="hero-image">
+          <img src={profilePicture} alt="Profile" />
+        </div>
+      </main>
     </div>
   );
 }
